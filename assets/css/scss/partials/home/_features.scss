@@ -1,0 +1,256 @@
+
+.features{
+
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        // z-index: 9;
+        padding: 20px;
+
+        @include mobile{
+            padding: 0;
+        }
+        
+    
+      
+    
+        &-container{
+            // background-color:#F8f8f8;
+            width: 1140px;      
+            padding: 20px 80px;
+            text-align: center;
+            // height:100vh;
+            padding-top: 50px;
+            border-radius: 15px;
+            background-image: url('../../img/home/feature-particles.svg');
+            background-position: 100% 84%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
+            // z-index: 99;
+
+            @include mobile{
+            padding: 20px 20px;
+
+            }
+        
+        
+            // text-align: center;
+
+
+            h6{
+                color:#D2B770;
+            }
+            h1{
+                color: $body_bg;
+            }
+
+            .action-btn{
+                text-align: center;
+                width: 100%;
+                margin: 20px 0 100px 0;
+
+                .group-btn{
+                    // border-radius: 25px;
+                   
+                    display: grid;
+                    justify-self: center;
+                    width:380px;
+                    // text-align: center;
+                    margin: 0 auto;
+                    grid-template-columns: auto  auto;
+
+                   
+
+                    @include mobile{
+                        width: 320px;
+                     }
+    
+                    div{
+                        display: grid;
+                        grid-template-columns: 50px 120px;
+                        justify-content:center;
+                        align-items: center;
+                        padding:04px 05px;
+                        width: 190px;
+
+                        @include mobile{
+                        justify-content:normal;
+                            
+                        }
+
+                        @include mobile{
+                            width: 160px;
+                         }
+
+                        .icon img{
+                            width:35px;
+                        }
+                        .heading{
+                            font-family:'Avenir LT Pro 65';
+                        }
+
+                        @include mobile{
+                            font-size: 15px;
+                        }
+
+                    }
+    
+                    a{
+                        // color: $body_bg;
+                        text-decoration: none;
+                    
+                        .bscscan{
+                            background-color:#FAF8F2;
+                            color: $body_bg;
+                            border-radius: 35px 0 0 35px; 
+                        }
+        
+                        .pancakeswap{
+                            color: #FAF8F2;
+                            background-color:$text_color ;
+                            border-radius:0 35px 35px 0;
+                        }
+
+                    }
+                }
+            }
+
+
+
+
+            .feature{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                // grid-template-columns: 1fr 1fr;
+                margin-bottom: 150px;
+                position: relative;
+                z-index: 99;
+
+                @include mobile{
+                grid-template-columns: 1fr ;
+                margin-bottom: 50px;
+
+
+                }
+               
+
+                &:nth-of-type(even){
+
+                   @include mobile{
+                    .content-img{
+                        order: 1;
+                    }
+                    .content-box{
+                        order: 2;
+                    }
+                   }
+
+
+                    &::after{
+                        background: url('../../img/home/dot-particles.svg');
+                        background-position: 0% 0%;
+                        background-repeat: no-repeat;
+                        background-size: 40%;
+                        width: 35%;
+                        height: 37%;
+                        content: "";
+                        position: absolute;
+                        top: -37px;
+                        left: -28px;
+                        z-index: 1;
+                    }
+                
+
+                }
+
+
+                &:nth-of-type(odd){
+                    &::after{
+                        background: url('../../img/home/dot-particles.svg');
+                        background-position: 0% 0%;
+                        background-repeat: no-repeat;
+                        background-size: 40%;
+                        width: 35%;
+                        height: 37%;
+                        content: "";
+                        position: absolute;
+                        bottom: -28%;
+                        left: 94%;
+                        z-index: 1;
+                    }
+                
+
+                }
+
+                .content-box{
+                    text-align: left;
+                    box-shadow: 5px 10px 30px rgba(181, 224, 255, 0.25);
+                    padding:50px 50px 70px 50px;
+                    width: 400px;
+                    height: 480px;
+                    color:$body_bg;
+                     z-index: 2;
+                     background:$white;
+
+                     @include mobile{
+                         text-align: center;
+                       width: auto;
+                    height: auto;
+                    margin-bottom: 30px;
+                    padding:40px 30px;
+                    
+
+                    }
+
+                    img{
+                        width:40px;
+                    }
+
+                    h2{
+                        font-family:'Avenir LT Pro 65';
+                        margin: 20px 0;
+                        font-size: 27px;
+                    }
+                    p{
+                        font-size:16px;
+                        line-height: 1.7em;
+                    }
+
+                }
+
+                .content-img {
+                    display: flex;
+                    justify-content: auto;
+
+                    @include mobile{
+                        justify-content: center;
+                    }
+
+                    img{
+                        width:100%;
+
+                        @include mobile{
+                            width: 90%;
+                         }
+
+                         @include tablet-portrait{
+                            width: 300px;
+                         }
+                        
+                    }
+                }
+
+            }
+           
+
+
+        }
+
+
+  }

@@ -1,0 +1,166 @@
+
+.faqs{
+
+    position: relative;
+    background-color: FAF8F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    // z-index: 9;
+    padding: 20px;
+    text-align: left;
+
+    @include mobile{
+        padding: 0;
+    }
+    
+
+  
+
+    &-container{
+        // background-color:#F8f8f8;
+        width: 1140px;      
+        padding: 100px 100px;
+
+        // text-align: center;
+        // height:100vh;
+        // padding-top: 50px;
+        border-radius: 15px;
+        background-image: url('../../img/home/feature-particles.svg');
+        background-position: 100% 84%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        // z-index: 99;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        @include mobile{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        }
+        @include tablet-portrait{
+            padding:50px;
+        // grid-template-columns: 300px auto;
+
+        }
+        @include tablet-landscape{
+            padding:50px;
+        }
+
+        // flex-basis: 50%;
+
+
+        .left{
+            color: $body_bg;
+            text-align: left;
+
+            @include mobile{
+                text-align: center;
+
+            }
+
+            h6{
+                font-weight: 500;
+            }
+
+            h1{
+                margin-top: 20px;
+                font-size: 35px;
+                width: 50%;
+                font-weight: 700;
+                font-family: "Avenir LT Pro 65" !important;
+
+                @include mobile{
+                font-size: 20px;
+                margin-bottom: 20px;
+                width: 100%;
+
+
+
+                }
+            }
+        }
+
+        .right{
+            color: $body_bg;
+            text-align: left;
+        font-size: 14px;
+        text-align: left;
+
+
+            .faqs{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                
+                
+
+                .faq{
+                    
+                    .accordion{
+                        background-color: $white;
+                        border-radius: 10px;
+                        padding: 15px;
+                        margin-bottom:10px;
+                        border: 0;
+                        width:100%;
+                        text-align: left;
+                        font-weight: 500;
+                        color: $body_bg;
+                        position: relative;
+                        font-size: 16px;
+                        font-family:"Avenir LT Pro" !important;
+
+                        &::after {
+                            content: url("../../img/home/plus.svg");
+                            right: 20px;
+                            position: absolute;
+                            top: 14px;
+                        
+                        }
+
+                        &.active{
+                            
+                                background-color:$white;
+                                border: none;
+                                // color: $yellow;
+                                // margin-bottom: 0;
+
+                                &::after {
+                                    content: url("../../img/home/minus.svg");
+                                    right: 20px;
+                                    position: absolute;
+                                    top: 23px;
+                                
+                                }
+                             
+                        }
+
+                    }
+
+                    .panel{
+                        background-color: $widget_bg;
+                        color: $white;
+                        padding: 15px;
+                        border-radius: 10px;
+                        display: none;
+                    }
+                }
+
+
+            }
+           
+
+        }
+
+
+    }
+    
+
+    
+}

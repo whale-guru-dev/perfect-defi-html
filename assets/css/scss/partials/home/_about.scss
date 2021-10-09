@@ -1,0 +1,156 @@
+
+
+
+.about{
+//    background-color: $widget_item_bg;
+    // margin-top: 90px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 99;
+
+    @include mobile{
+        padding:20px;
+    }
+    
+
+  
+
+    &-container{
+        background-color:#FAF8F2 ;
+        width: 1140px;      
+        padding: 20px 20px;
+        text-align: center;
+        // height:100vh;
+        padding: 90px;
+        border-radius: 15px;
+        // background-image: url('../../img/home/flower.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        margin-top: -230px;
+
+        @include mobile{
+        margin-top: -190px;
+        padding:20px 15px; 
+        }
+
+        @include tablet-portrait{
+            margin-right:30px;
+            margin-left:30px;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        
+
+        h6{
+            color: #F39A8B;
+        }
+
+        h1{
+            color: $widget_bg;
+            margin-bottom: 30px;
+            font-family:"Avenir LT Pro 65" ;
+            font-size: 30px;
+            
+
+        }
+
+
+        .details{
+            color: $widget_bg;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          
+            @include mobile{
+            grid-template-columns: 1fr;
+
+            }
+
+
+            .left{
+                text-align: justify;
+                font-size: 18px;
+                line-height: 1.8em;
+                padding-right: 30px;
+
+                @include mobile{
+                 padding-right: 0px;
+                 margin-bottom: 50px;
+                 text-align: justify;
+                font-size: 16px;
+                line-height: 1.5em;
+
+
+
+        
+                    }
+                
+            }
+
+
+            .right{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+
+            .option-box{
+                        display: grid;
+                        grid-template-columns: 50px auto;
+                        grid-gap: 20px;
+                        align-items: start;
+                        text-align: justify;
+
+                        @include mobile{
+                        grid-template-columns: 1fr;
+
+                        }
+
+                        .icon {
+                            @include mobile{
+                                text-align: justify;
+    
+                            }
+                            img{
+                                width: 50px;
+                            }
+                        }
+
+                        .desc{
+                            @include mobile{
+                            text-align: center;
+
+                                @include mobile{
+                                text-align: justify;
+
+                                }
+
+                            }
+                            
+                            h3{
+                                color: $body_bg;
+
+                            }
+                            p{
+                            color: #001b36b8;
+                            margin-top: 10px;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 1.5em;
+                            }
+                        }
+            }
+
+
+
+            }
+
+        }
+
+    }
+
+}

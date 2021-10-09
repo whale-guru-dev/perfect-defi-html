@@ -1,0 +1,504 @@
+@import '../../global/colors';
+@import '../../global/colors';
+@import '../../global/variables';
+@import '../../global/media-query';
+
+
+
+
+
+
+
+/*CONTENT*/ 
+// body{
+//     // background: red!important;
+// }
+
+.content{
+    // background:linear-gradient(to right,rgba($middle_green,0.6));
+    // background-color: $fade_yellow;
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    // margin-left: 80px;
+    overflow: hidden;
+    z-index: 9;
+    // background: red;
+
+
+    @include mobile{
+        margin-bottom: 0px;
+    
+    }
+
+
+  
+
+    &-container{
+        width: 100%;   
+    // background: $white;
+
+        // padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // overflow: hidden;
+
+        // @include tablet-portrait{
+        //     padding:20px ;
+        // }
+        // @include mobile{
+        //     padding:10px ;
+        // }
+
+        &-wrapper{
+        display: grid;
+        padding: 40px 200px 50px 19%;
+        width: 100%;
+
+
+        @include mobile{
+            padding: 10px 20px 50px 20px;
+
+        }
+
+        @include tablet-portrait{
+        padding: 60px 50px 50px 19%!important;
+
+        }
+
+        @include tablet-landscape{
+            padding: 60px 200px 50px 19%;
+    
+            }
+
+        canvas{
+            height: auto!important;
+
+            @include mobile{
+                height: auto!important;
+            }
+        }
+       
+      
+      
+                
+                .widgets{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                    grid-gap: 20px;
+
+                    @include mobile{
+                        grid-gap: 25px;
+                        // grid-template-columns: auto auto auto auto;
+                      grid-template-rows: 1fr 1fr 1fr;
+                    }
+
+                    @include tablet-landscape{
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+                    }
+
+
+                    .widget{//div
+                        // width: 250;
+                        height: 200px;
+                        background-color: $nav_bg;
+                        box-shadow: 0px 18.2554px 24.6448px rgba(0, 0, 0, 0.05);
+                        display:flex;
+                        flex-direction: column;
+                        border-radius: 8px;
+                        position: relative;
+                        overflow: hidden;
+
+                        &::after {
+                            background: url("../../img/poly.svg");
+                            right: -3px;
+                            position: absolute;
+                            top: -19px;
+                            width: 60px;
+                            height: 60px;
+                            content: "";
+                            z-index: 9999;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                        // 
+                        }
+                        
+
+                        @include mobile{
+                        padding: 25px 30px;
+                        height: 220px;
+
+                        
+
+                        }
+
+                        &-1{
+                            grid-column: 1/ span 2;
+                            padding: 15px;
+
+                            @include mobile{
+                            grid-column:auto;
+
+                            }
+
+                            h5.heading{
+                                margin: 0px 0 15px 0;
+                            }
+                            
+                            div.balance{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-gap:10px;
+                          
+
+                                div{
+
+                                    .design{
+                                        width: 60%;
+                                        height: 6px;
+                                        background-color: $text_color;
+                                        border-radius: 25px;
+                                        // padding-top: 1px;
+                                        // padding-bottom: 1px;
+                                        text-align: center;
+                                        margin-top: 15px;
+
+
+
+                                        div{
+                                        background-color: $body_bg;
+                                        border-radius: 25px;
+                                        width: 50%;
+                                        height: 6px;
+                                        margin: 0 auto;
+
+
+
+                                        }
+
+                                    }
+                                   
+                                    h2{
+                                        color: $white;
+                                        font-size: 30px;
+                                    }
+
+                                    div.icon-box{
+                                        display: flex;
+                                        // align-items: center;
+                                        justify-content: flex-start;
+                                        grid-gap:10px;
+
+                                        @include mobile{
+                                            flex-direction: column;
+                                            justify-content: center!important;
+                                            grid-gap:0px;
+
+                                        }
+
+                                        img{
+                                            margin-left: -4px;
+                                            @include mobile{
+                                                width:50px;
+                                            }
+                                        }
+
+                                        h5{
+                                            font-weight: 300;
+                                            @include mobile{
+                                                margin:0 0 10px 0;
+                                            }
+                                        }
+                                    }
+
+
+
+
+                                        // height: 50px;
+                                        // text-align: left;
+                                        // display: flex;
+                                        // align-items: center;
+                                        // align-self: start;
+                                        // justify-content: center;
+                                        // width: 100%;
+
+
+                                }                           
+                            }
+                             
+                        }
+
+
+
+                        &-3{
+                            padding: 15px;
+
+                        }
+                       
+                       &-2{
+                        //    padding: 20px;
+                           justify-content: center;
+                           align-items: center;
+
+                         
+                        a{
+                            color:$white ;
+                            text-decoration: none;
+
+                            span{
+                                border-radius: 25px;
+                                display: flex;
+                                justify-content: start;
+                                width: 100%;
+                                height: 41px;
+                                padding: 0px 10px;
+ 
+                                &:nth-child(odd){
+                                    margin:10px 0;
+                                }
+ 
+                                @include mobile{
+                                 justify-content: center;
+                                 width: 240px;
+                                 margin: 2px 0;
+                                }
+ 
+                                 h5{
+                                    margin-left: 10px;
+                                   }
+                            }
+                        }
+                          
+                       }
+
+                        &-item{
+                            height: 50px;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            align-self: center;
+                            justify-content: center;
+                            width: 100%;
+
+                        }
+
+                    }
+                }
+
+
+                .pd-staking{
+                    margin-top: 70px;
+
+                    h4{
+                        padding: 10 20px 20px
+                    }
+
+                    .stakes{
+                        background-color: $nav_bg;
+                        border-radius: 10px;
+                        padding: 20px 10px;
+
+                        .stake{
+                            margin-bottom: 20px;
+                            background: $widget_bg;
+                            border-radius: 25px;
+                            padding: 5px;
+                            position: relative;
+                            
+
+                            &.dropped {
+                                // border: 1px solid #3aaa35;
+                                padding: 9px -1px 4px 19px;
+                                margin-bottom: 16px;
+                                border-radius: 25px;
+                            }
+                            
+                            button.accordion{
+                                    background: $widget_bg;
+                                    
+                                    // border: 1px solid #3aaa35;
+                                    color: $text_color;
+                                    border-radius: 25px;
+                                    font-family: "Avenir LT Pro";
+                                    cursor: pointer;
+                                    padding:10px;
+                                    width: 100%;
+                                    text-align: left;
+                                    outline: none;
+                                    // margin-bottom: 16px;
+                                    -webkit-transition: 0.4s;
+                                    transition: 0.4s;
+                                    border:0;
+
+                                    .stake-img{
+                                            top: 12px;
+                                            position: absolute;
+                                            width: 3%;
+                                            left: 20%;
+
+                                            @include mobile{
+                                                top: 12px;
+                                                position: absolute;
+                                                width: 10%;
+                                                left: 60%;
+                                            }
+
+                                            @include tablet-portrait{
+                                                top: 11px;
+                                                position: absolute;
+                                                width: 06%;
+                                                left: 30%;
+                                            }
+
+                                    }
+
+                                    &::after {
+                                        content: url("../../img/arrowdown.svg");
+                                        right: 20px;
+                                        position: absolute;
+                                        top: 9px;
+                                    
+                                    }
+
+                                    &.active{
+                                        
+                                            background-color:$widget_bg;
+                                            border: none;
+                                            // color: $yellow;
+                                            // margin-bottom: 0;
+
+                                            &::after {
+                                                content: url("../../img/arrowup.svg");
+                                                right: 20px;
+                                                position: absolute;
+                                                top: 9px;
+                                            
+                                            }
+                                         
+                                    }
+                            }
+
+                            .panel{
+                                margin: 16px 10;
+                                // padding: 10px;
+                                display: none;
+                                background-color: transparent;
+                                overflow: hidden;
+                                color: $text_color;
+                                font-family:"Avenir LT Pro" ;
+                                font-size: 14px;
+
+
+                                .investor-stake{
+                                    border-radius: 15px !important;
+                                    border: 6px solid $body_bg;
+                                    width:10%;
+                                    width: 100%;
+                                    overflow-x: auto;
+                                    // padding: 5px;
+                                    @include mobile{
+                                        overflow-x:auto;
+                                        width:20em;
+                                    }
+                                
+
+                                    table{
+                                        font-size: 11px;
+                                        width:100%;
+                                        text-align: left;
+                                        // border-radius: 15px!important;
+                                        // border: 4px solid $body_bg;
+                                        background: $widget_bg;
+                                        padding: 15px;
+                                        border-collapse: collapse;
+    
+                                        th{
+                                            color: $fade_yellow;
+                                        }
+                                        td, th {
+                                            padding: 10px 15px !important;
+                                        }
+    
+                                        .button{
+                                            background-image:linear-gradient(to right,$btn_bg_color1,$btn_bg_color2,$btn_bg_color3);
+                                            padding: 8px 10px;
+                                            border-radius: 25px;
+                                            width: 140px;
+                                            text-align: center;
+                                            color: $btn_text_color;
+                                        }
+                                        tr:hover {
+                                            background:$body_bg;
+                                        }
+                                    }
+                                }
+
+
+                                form{
+                                    display: flex;
+                                    // width:80%;
+                                    @include mobile{
+                                        flex-direction: column;
+                                    }
+
+                                    .stake-value{
+                                        width: 60%;
+                                        background: $nav_bg;
+                                        margin-right: 20px;
+                                        border-radius: 25px;
+
+                                    }
+
+                                    .stake-button{
+                                        width:20%;
+                                        background-image:linear-gradient(to right,$btn_bg_color1,$btn_bg_color2,$btn_bg_color3);
+                                        color: $btn_text_color;
+
+                                    }
+
+                                    input{
+                                        border-radius: 25px;
+                                        font-size: 14px $yellow;
+                                        padding: 13px;
+                                        border: 1px solid $yellow;
+                                        color: $body_text;
+
+                                        @include mobile{
+                                            width: 100%!important;
+                                            margin-bottom: 10px;
+                                        }
+
+                                        &:focus{
+                                            outline: none;
+
+                                        }
+
+
+                                        &::placeholder{
+                                            // background:$body_bg;
+                                            color: $body_text;
+                                        border-radius: 25px;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+             
+
+        }
+
+
+         
+    }
+
+}

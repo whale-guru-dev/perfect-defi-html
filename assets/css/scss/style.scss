@@ -1,0 +1,72 @@
+/**
+Author: Nolimitbuzz
+Website URL: https://nolimitbuzz.net
+Developer: Engr. Segun
+CSS Framework: SASS
+
+*/
+
+
+/* GLOBAL PARTIALS */
+@import './partials/global/variables';
+@import './partials/global/colors';
+@import './partials/global/reset';
+@import './partials/global/fonts';
+@import './partials/global/media-query';
+@import './partials/global/loader';
+
+
+
+/*Social Follow*/ 
+@import './partials/global/follow';
+
+
+/* DASHBOARD PARTIALS */ 
+
+/*Header*/ 
+@import './partials/global/header-dashboard';
+
+/*Dashboard navigation/sidemenu */ 
+@import './partials/global/sidemenu-dashboard.scss';
+
+/* Stake Dashboard Content*/ 
+@import './partials/dashboard/stake/content.scss';
+
+
+/* Private Sales Dashboard Content*/ 
+@import './partials/dashboard/private-sales/content.scss';
+
+
+/* Footer Section */ 
+@import './partials/global/footer-dashboard';
+
+
+
+
+/* LANDING PAGE PARTIALS*/ 
+
+/* Header*/ 
+@import './partials/global/header-home';
+
+/* Hero Section*/ 
+@import './partials/home/hero';
+
+/* About Section*/ 
+@import './partials/home/about';
+
+
+/* Features Section*/ 
+@import './partials/home/features';
+
+/* FAQs Section */ 
+@import './partials/home/faqs';
+
+
+/* Roadmap Section */ 
+@import './partials/home/roadmap';
+
+
+/* Footer Section */ 
+@import './partials/global/footer-home';
+
+

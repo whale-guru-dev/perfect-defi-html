@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/home/half-gold.svg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 20px;
+  text-align: left;
+}

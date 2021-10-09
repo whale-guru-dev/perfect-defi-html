@@ -1,0 +1,21 @@
+.about {
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-container {
+  background-color: #FAF8F2;
+  width: 1000px;
+  padding: 20px 20px;
+  text-align: center;
+  height: 100vh;
+  padding-top: 100px;
+  background-image: url("../../img/home/flower.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}

@@ -1,0 +1,24 @@
+/* COLOR PALLETE*/
+/* Text*/
+/* BG*/
+/* Gradient Button*/
+/*Widget Colors*/
+.bg-fade-yellow {
+  background-color: #E1CFA0;
+}
+
+.bg-light-navy {
+  background-color: #002B53;
+}
+
+.text-grey {
+  color: #8095A9;
+}
+
+.text-navy {
+  color: #001529;
+}
+
+.text-white {
+  color: #fff;
+}
